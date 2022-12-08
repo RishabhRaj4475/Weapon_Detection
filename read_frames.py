@@ -11,9 +11,13 @@ while(cap.isOpened()):
 	# incase video ends.
 	if ret == False:
 		break
+
+
+	# convert the captured frame into grayscale
+	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	
 	# Save Frame by Frame into disk using imwrite method
-	cv2.imwrite('/Users/risha/Desktop/major project/Frames/Frame'+str(i)+'.jpg', frame)
+	cv2.imwrite('/Users/risha/Desktop/major project/Frames/Frame'+str(i)+'.jpg', gray)
 	i += 1
 
 cap.release()
