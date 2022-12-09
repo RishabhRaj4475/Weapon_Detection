@@ -1,0 +1,15 @@
+@Usha Maam Dsd Maam we have started implementing our project .
+This is Github Repository we will be maintaining *https://github.com/RishabhRaj4475/Weapon_Detection* and we will be giving timely updates regarding the changes and progress in our project
+
+Day1 :-
+Learning 
+-> we learnt how to capture frames and read those frames later from a live video camera feed using opencv and python.
+-> we also learnt how to convert the captured frames from RGB to grayscale
+
+Articles we referred 
+->https://www.educative.io/answers/how-to-capture-a-frame-from-real-time-camera-video-using-opencv 
+->https://www.geeksforgeeks.org/extract-video-frames-from-webcam-and-save-to-images-using-python/
+->https://www.youtube.com/watch?v=_bCJ6RiU36U
+->https://www.quora.com/In-image-processing-applications-why-do-we-convert-from-RGB-to-Grayscale
+
+
