@@ -8,6 +8,6 @@ for File in Files:
     print(imgPath)
     image = cv2.imread (imgPath, cv2.IMREAD_GRAYSCALE)
     cv2.imshow('image', image)
-    cv2.waitKey(5000)
+    cv2.waitKey(100)
     
 cv2.destroyAllWindows()
