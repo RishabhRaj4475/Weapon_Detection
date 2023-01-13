@@ -37,15 +37,16 @@ while True:
             upper_left_y = int(detected_objects[0, 0, i, 4] * height)
             lower_right_x = int(detected_objects[0, 0, i, 5] * width)
             lower_right_y = int(detected_objects[0, 0, i, 6] * height)
-            roundConfi = confidence * 100
-            predection_text = f"{classes[class_index]}: {roundConfi:.2f}%"
+            
+            predection_text = f"{classes[class_index]}: {confidence:.2f}%"
 
             cv2.rectangle(image, (upper_left_x, upper_left_y), (lower_right_x, lower_right_y), colors[class_index], 3)
-            cv2.putText(image, predection_text, (upper_left_x, upper_left_y - 15 if upper_left_y > 30 else upper_left_y + 15),
-            cv2.FONT_HERSHEY_SIMPLEX, 0.6, colors[class_index], 2)
+            cv2.putText(image, predection_text, (upper_left_x, upper_left_y - 15 if upper_left_y > 30 else upper_left_y + 15),cv2.FONT_HERSHEY_SIMPLEX, 0.6, colors[class_index], 2)
 
             cv2.imshow("Detected", image)
-            cv2.waitKey(1)
+            keyboard = cv2.waitKey (30)
+            if keyboard == 'q' or keyboard == 27:
+                break
 
 cv2.destroyAllWindows()
 cv2.release()

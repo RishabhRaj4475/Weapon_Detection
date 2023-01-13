@@ -9,6 +9,7 @@ while(cap.isOpened()):
 	
 	# This condition prevents from infinite looping
 	# incase video ends.
+ 
     if ret == False:
         break
 
